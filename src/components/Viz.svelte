@@ -7,7 +7,7 @@
   let viz, tooltip;
 
   // read in the data
-  d3.csv('/data/scilifelab-publications.csv', (d) => ({
+  d3.csv('data/scilifelab-publications.csv', (d) => ({
     issn: d.ISSN,
     journal: d.Journal,
     year: +d.Published.split('-')[0]
